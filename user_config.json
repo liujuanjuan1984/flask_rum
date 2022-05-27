@@ -1,0 +1,21 @@
+{
+ "seed": {
+  "genesis_block": {
+   "BlockId": "963647ef-3003-460c-996b-9530e8ed5773",
+   "GroupId": "fa70d057-f451-4ce3-ba79-0c22bbce5f22",
+   "ProducerPubKey": "CAISIQIWzKueOsKwafElPw7k8opwDvZNIooG/5qyj9yD+J/nxw==",
+   "Hash": "cBJ3Xe5+WqBHxz6Ft/i4PydG6NCBAkHzmCUq6B5i9Oc=",
+   "Signature": "MEUCIAt2qJJWzdTSOf4jT2weKGGGttDQJQ99sU9CCOBbOUEgAiEA5Imq0tN26BVKhunqkp99q1yyiDcyTcbKs+7yJXxYGgo=",
+   "TimeStamp": "1653620648124360000"
+  },
+  "group_id": "fa70d057-f451-4ce3-ba79-0c22bbce5f22",
+  "group_name": "ishare_2022-05-27",
+  "owner_pubkey": "CAISIQIWzKueOsKwafElPw7k8opwDvZNIooG/5qyj9yD+J/nxw==",
+  "consensus_type": "poa",
+  "encryption_type": "public",
+  "cipher_key": "bfe667da9adaaba428bc8d11d892dda76bdc900dff44beac8c1eed62dbb70289",
+  "app_key": "group_timeline",
+  "signature": "3045022007e117075fbf49bedc40cfe63db7cbf75467669c18aaee990d199b0e751c163a022100ad43b1aaf02b450cbdc83da2f1fd4d3bfdd56430ba55cc22bc1b15aeb05f90a5"
+ },
+ "port": 51194
+}

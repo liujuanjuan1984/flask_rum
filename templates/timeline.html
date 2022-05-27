@@ -1,0 +1,31 @@
+{% extends "base.html" %} {% block js %}
+<script src="{{ url_for('static', filename='js/jquery.tablesorter.min.js') }}"></script>
+<script type="text/javascript" id="js">
+    $(document).ready(function() {
+        var timeExtraction = function(node) {
+            if ($(node).attr('data-time-in-seconds') !== undefined) {
+                return '-' + node.getAttribute('data-time-in-seconds');
+            } else {
+                return node.innerHTML;
+            }
+        }
+        $("#seed-overview-table").tablesorter({
+            textExtraction: timeExtraction
+        });
+    });
+</script>
+{% endblock %}{% block body %}
+<section class="header">
+    <h3 class="docs-header seed-overview">TimeLine Mix</h3>
+    <div class="row">
+        <div class="u-full-width">
+            {% for trx in trxsview %}
+                <div>
+                <div class="u-full-width">{{ trx.text }}</div>
+                <div class="u-full-width" >{{trx.timestamp}} {{ trx.group_id }} {{ trx.trx_id }} </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

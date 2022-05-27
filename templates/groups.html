@@ -1,0 +1,12 @@
+{% extends "base.html" %} {% block body %}
+<section class="header">
+    <h2 class="title">Your Groups of Quorum</h2>
+</section>
+<section>
+    <div class="container">
+        {% for gid in group_ids  %}
+        <li>{{gid}}</li>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

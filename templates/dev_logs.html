@@ -1,0 +1,31 @@
+{% extends "base.html" %} {% block body %}
+<section class="header">
+    <h2 class="title">Dev logs 开发日志</h2>
+</section>
+<section>
+    <h4 class="title">To Do List 待开发</h4>
+    <div class="container">
+        <div>
+            <li>配置文件：记录用户的端口号，以及未来其它自定义信息</li>
+            <li>通过网页发布内容到单个指定种子网络</li>
+            <li>用户可以设定把动态发布到多个种子网络</li>
+            <li>种子网络选择器及配置文件</li>
+            <li>文件上传、下载</li>
+            <li>同类模板的集中渲染：timelilne，bbs等</li>
+            <li>种子大全与数据概览</li>
+            <li>获取mixin账号 oauth</li>
+            <li>导出数据为文本文件</li>
+            <li>已加入的种子列表，一键退出<li>
+    </div>
+</section>
+<section>
+    <h4 class="title">History 开发历史</h4>
+    <div class="container">
+        <div>
+            <li>2022-05-26: 创建项目。</li>
+            <p>开发：初建 3 个简单网页：开发日志，让用户手动输入 quorum 的端口，输入正确将连上用户本地 quorum 节点，并返回用户所加入的 groups 列表。</p>
+            <p>运维：尝试把 flask 打包为桌面应用，工具和流程跑通了，但效果不太满意，待未来优化。</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

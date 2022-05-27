@@ -1,0 +1,30 @@
+{% extends "base.html" %} {% block body %}
+<section class="header">
+    <h2 class="title">Send sth. to Quorum Groups</h2>
+</section>
+<section>
+    <div class="container">
+        <div>
+            创建一条内容，一键发送到多个种子网络。
+        </div>
+    </div>
+</section>
+<section class=" container">
+    {% if form.errors %}
+    <div class="has-error"> Ooopps.Something went wrong.</div>
+    {% endif %}
+    <form action="{{ url_for('post_to_groups') }}" method=post class=" container">
+        {{ form.csrf_token }} {{ form.hidden_tag() }}
+        <div >{{form.title(placeholder="需要标题吗？", value="", maxlength=2000)}}
+        </div>
+            <div >{{form.text(placeholder="有什么新鲜事？有什么好文章？", value="", maxlength=2000)}}
+            </div>
+            <div >{{form.groups}}
+            </div>
+            <div>{{form.submit(class="button button-primary", value="Commit")}}
+            </div>
+
+    </form>
+</section>
+
+{% endblock %}
